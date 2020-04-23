@@ -17,6 +17,7 @@ const list = document.getElementById('playlist-id');
 function createPlaylist(input) {
     clearList();
     for (i in input) {
+        console.log(input[i]);
         createItem(input[i]);
     }
 

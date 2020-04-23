@@ -15,7 +15,7 @@ function showHome() {
 function hideClick() {
     if (!loggedIn) {
         document.getElementById('menu-checkbox').checked = false;
-        alertHome("Please Login !");
+        alertHome("Please Login To Use !");
     } else {
         if (document.getElementById('menu-checkbox').checked) {
             document.getElementById("click-me").style.display = "none";
