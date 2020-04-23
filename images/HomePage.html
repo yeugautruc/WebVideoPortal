@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://localhost:3000/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="-1">
+		<title>HomePage</title>
+		<link rel="stylesheet" type="text/css" href="./HomePage_files/homepage.css">
+	<link id="avast_os_ext_custom_font" href="chrome-extension://eofcbnmajmjmplflapaojjnihcjkigck/common/ui/fonts/fonts.css" rel="stylesheet" type="text/css"></head>
+	<body><script type="text/javascript" id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.2.8.2.js'><\/script>".replace("HOST", location.hostname));
+//]]></script><script async="" src="./HomePage_files/browser-sync-client.2.8.2.js.Download"></script>
+
+	<header class="glow" id="header">VideoPortal</header>
+	<div class="click-me" id="click-me" style="display: block;">
+		<p id="click-me">Click Me</p>
+		<img id="click-me" src="./HomePage_files/click.svg">
+	</div>
+	<div>
+		<div class="cover-img"><img src="./HomePage_files/cover.jpg"></div>
+		<nav class="menu">
+			<input class="menu-toggler" type="checkbox" autocomplete="off" id="menu-checkbox" onclick="calc();">
+			<label for="menu-toggler"></label>
+			<ul>
+				<li class="menu-item">
+					<a class="music-icon" href="http://localhost:3000/musics_portal.html">
+						<img src="./HomePage_files/music.svg">
+						<p class="img-description">Music</p>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="sport-icon" href="http://localhost:3000/sport_portal.html">
+						<img src="./HomePage_files/sport.svg">
+						<p class="img-description">Sport</p>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="game-icon" href="http://localhost:3000/game_portal.html">
+						<img src="./HomePage_files/gaming.svg">
+						<p class="img-description">Game</p>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="learn-icon" href="http://localhost:3000/learn_portal.html">
+						<img src="./HomePage_files/learn.svg">
+						<p class="img-description">Learn</p>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="funny-icon" href="http://localhost:3000/funny_portal.html">
+						<img src="./HomePage_files/funny.svg">
+						<p class="img-description">Funny</p>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="news-icon" href="http://localhost:3000/news_portal.html">
+						<img src="./HomePage_files/news.svg">
+						<p class="img-description">News</p>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<footer>
+		<div class="footer-container">
+			<div class="footer-content">
+				<p class="email-address">m.doan@ostfalia.de</p>
+				<p>WebProgrammierungSoSe2020</p>
+			</div>
+		</div>
+	</footer>
+
+<script type="text/javascript">
+	function calc()
+{
+if (document.getElementById('menu-checkbox').checked)
+{
+document.getElementById("click-me").style.display = "none";
+} else {
+document.getElementById("click-me").style.display = "block";
+}
+}
+</script>
+<div id="__bs_notify__" style="display: none; padding: 15px; font-family: sans-serif; position: fixed; font-size: 0.9em; z-index: 9999; right: 0px; top: 0px; border-bottom-left-radius: 5px; background-color: rgb(27, 32, 50); margin: 0px; color: white; text-align: center;">Connected to BrowserSync</div></body></html>

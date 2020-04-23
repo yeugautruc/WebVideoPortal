@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+		<META HTTP-EQUIV="Expires" CONTENT="-1">
+		<title>HomePage</title>
+		<link rel="shortcut icon" href="#">
+		<link rel="stylesheet" type="text/css" href="css/homepage.css">
+		<link rel="stylesheet" type="text/css" href="css/musics_portal.css">
+		
+	</head>
+	<body>
+		<div id="home-id">
+		<header class="glow" id="header">VideoPortal</header>
+		<div id="click-me">
+			<ul class="click-me">
+				<li><p id="click-me">Click</p></li>
+				<li><img id="click-me" src="images/click.svg"></li>
+			</ul>
+		</div>
+		<div id = "menu-home-id">
+			<div class="cover-img"><img src="images/cover.jpg"></div>
+			<nav class="menu">
+				<input class="menu-toggler" type="checkbox" autocomplete="off" id="menu-checkbox" onclick="hideClick();">
+				<label for="menu-toggler"></label>
+				<ul>
+					<li class="menu-item">
+						<a class="music-icon" href="#" onclick="hideHome(1);">
+							<img src="images/music.svg" >
+							<p class="img-description">Music</p>
+						</a>
+					</li>
+					<li class="menu-item">
+						<a class="sport-icon" href="#" onclick="hideHome(2);">
+							<img src="images/sport.svg">
+							<p class="img-description">Sport</p>
+						</a>
+					</li>
+					<li class="menu-item">
+						<a class="game-icon" href="#" onclick="hideHome(3);">
+							<img src="images/gaming.svg" >
+							<p class="img-description">Game</p>
+						</a>
+					</li>
+					<li class="menu-item">
+						<a class="learn-icon" href="#" onclick="hideHome(4);">
+							<img src="images/learn.svg" >
+							<p class="img-description">Learn</p>
+						</a>
+					</li>
+					<li class="menu-item">
+						<a class ="funny-icon" href="#" onclick="hideHome(5);">
+							<img src="images/funny.svg">
+							<p class="img-description">Funny</p>
+						</a>
+					</li>
+					<li class="menu-item">
+						<a class="news-icon" href="#" onclick="hideHome(6);">
+							<img src="images/news.svg" >
+							<p class="img-description">News</p>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-content">
+					<p class="email-address">m.doan@ostfalia.de</p>
+					<p>WebProgrammierungSoSe2020</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="video-part" style="display: none;">
+		<div class="menu">
+			<div class="home"><img src="images/ham-menu.svg"></div>
+			<div class="space"></div>
+			<div class="item"><a href="#" onclick="showHome();"><span>Home</span></a></div>
+			<div class="item"><a href="#" onclick="hideHome(1);"><span>Music</span></a></div>
+			<div class="item"><a href="#" onclick="hideHome(2);"><span>Funny</span></a></div>
+			<div class="item"><a href="#" onclick="hideHome(3);"><span>Sport</span></a></div>
+			<div class="item"><a href="#" onclick="hideHome(4);"><span>Learn</span></a></div>
+			<div class="item"><a href="#" onclick="hideHome(5);"><span>Game</span></a></div>
+			<div class="item"><a href="#" onclick="hideHome(6);"><span>News</span></a></div>
+		</div>
+		<section>
+		<video id="slider" class="content" controls loop></video>
+		<ul class="navigation" id="playlist-id">
+		</ul>
+	</section>
+</div>
+<script type="text/javascript" src="javascripts/videoPlayer.js"></script>
+<script type="text/javascript" src="javascripts/home.js"></script>
+</body>
+</html>

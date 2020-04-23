@@ -1,0 +1,233 @@
+
+body {
+  overflow: hidden;
+  background: linear-gradient(#13547a,#80d0c7);
+}
+header{
+	color: black;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	text-align: center;
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+.menu-toggler{
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+	z-index: 2;
+	opacity: 0;
+	cursor: pointer;
+}
+.menu-toggler + label {
+  width: 100px;
+  height: 15px;
+  display: block;
+  z-index: 1;
+  border-radius: 5px;
+  background: rgba(230, 239, 250, 0.9);
+  transition: transform 0.5s top 0.5s;
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.menu-toggler + label:before,
+.menu-toggler + label:after { /*add before and after line to create 3 line*/
+  width: 100px;
+  height: 15px;
+  z-index: 1;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.7);
+  transition: transform 0.5s top 0.5s;/*make some animation*/
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+}
+/*Seperate 3 line*/
+.menu-toggler + label:before {
+  top: 30px;
+}
+.menu-toggler + label:after {
+  top: -30px;
+}
+.menu-toggler:hover + label,
+.menu-toggler:hover + label:before,
+.menu-toggler:hover + label:after{
+	background-color: white;
+}
+.menu-toggler:checked + label {
+	background: transparent;
+}
+.menu-toggler:checked + label:before,
+.menu-toggler:checked + label:after,{
+	top: 0;
+	width: 100px;
+	transform-origin: 50% 50%; /*move menu icon to middle*/
+}
+.menu-toggler:checked + label:before {
+	transform: rotate(45deg) translateY(-22px) translateX(-22px);
+}
+.menu-toggler:checked + label:after{
+	transform: rotate(-45deg) translateY(20px) translateX(-20px);;
+}/*rotate to transform menu to exit button*/
+
+
+.menu-item{
+	position: absolute;
+	display: block; 
+	top: 15%;
+	bottom: 15%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 150px;
+	width: 150px;
+	opacity:0;
+	transition: 0.6s;
+}
+.menu-item a{
+	display: flex;
+	width: inherit;
+	height: inherit;
+	line-height: 100px;
+	color: rgba(255,255,255,0.1);
+	background: rgba(255,255,255,0.05);
+	border-radius: 50%;
+	text-align: center;
+	text-decoration: none;
+	font-size: 40px;
+	transition: 0.2s ease;
+}
+.menu-item a img{
+	width: 100%;
+}
+.menu-item a:hover{
+	box-shadow: 0 0 0 2px rgba(255,255,255,0.3);
+	font-size: 45px;
+	color: white;
+	background:rgba(255,255,255,0.3);
+}
+.menu-toggler:checked ~ ul .menu-item{
+	opacity: 1;
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(1) {
+	transform: rotate(0deg)	translate(-80px);
+}.menu-toggler:checked ~ ul .menu-item:nth-child(2) {
+	transform: rotate(60deg) translate(-80px);
+}.menu-toggler:checked ~ ul .menu-item:nth-child(3) {
+	transform: rotate(120deg) translate(-80px);
+}.menu-toggler:checked ~ ul .menu-item:nth-child(4) {
+	transform: rotate(180deg) translate(-80px);
+}.menu-toggler:checked ~ ul .menu-item:nth-child(5) {
+	transform: rotate(240deg) translate(-80px);
+}.menu-toggler:checked ~ ul .menu-item:nth-child(6) {
+	transform: rotate(300deg) translate(-80px);
+}}.menu-toggler:checked ~ ul .menu-item a {
+	pointer-events: auto;
+}
+
+
+.menu-item:nth-child(1) a{
+	transform: rotate(0deg);
+}.menu-item:nth-child(2) a{
+	transform: rotate(-60deg);
+}.menu-item:nth-child(3) a{
+	transform: rotate(-120deg);
+}.menu-item:nth-child(4) a{
+	transform: rotate(-180deg);
+}.menu-item:nth-child(5) a{
+	transform: rotate(-240deg);
+}.menu-item:nth-child(6) a{
+	transform: rotate(-300deg);
+}
+
+
+.menu-item a .img-description {
+  position: absolute;
+  top: 20;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100;
+  text-align: center;
+  vertical-align: center;
+  text-transform: uppercase;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s ease;
+}
+.menu-item a:hover .img-description {
+  visibility: visible;
+  z-index: 100;
+  opacity: 1;
+}
+.cover-img img{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	left: 0;
+}
+
+.footer-content{
+	display: block;
+	position: absolute;
+	color: white;
+	background-color: transparent;
+	opacity: 0.7;
+	top: 89%;
+	text-align: left;
+	margin-top: 0em;
+  	margin-bottom: 0em;
+  	margin-left: 0;
+  	margin-right: 0;
+}
+
+
+
+.glow {
+	position: absolute;
+	left: 39%;
+	z-index: 20;
+  	color: #fff;
+  	-webkit-animation: glow 1s ease-in-out infinite alternate;
+  	-moz-animation: glow 1s ease-in-out infinite alternate;
+  	animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #13547a, 0 0 20px #13547a, 0 0 30px #80d0c7, 0 0 40px #80d0c7, 0 0 50px #80d0c7, 0 0 60px #80d0c7, 0 0 70px #80d0c7;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #13547a, 0 0 30px #7d3cff, 0 0 40px #f2d53c, 0 0 50px #fceed1, 0 0 60px #fceed1, 0 0 70px #c80e13, 0 0 80px #13547a;
+  }
+}
+
+.click-me{
+	position: absolute;
+	z-index: 90;
+}
+.click-me p{
+	font-size: 60px;
+}
+.click-me img{
+	width: 30%;
+}
