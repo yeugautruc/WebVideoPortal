@@ -1,11 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
 #log-in-id {
-	display: flex;
+	display: block;
 	position: absolute;
-	margin-left: 0.5%;
+	margin-left: 0.5vw;
 }
-#logOut-btn-id{
+
+#logOut-btn-id:hover {
+	background-color: #4CAF50;
+	opacity: 0.8;
+}
+
+#logOut-btn-id {
 	display: none;
 	position: absolute;
-	top: 1%;
-	left: 1%;
+	top: 1vh;
+	left: 1vw;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1em;
+	background-color: rgba(252, 252, 252, 0.1); /* Green */
+	border: none;
+	color: white;
+	text-decoration: none;
+	border-radius: 4px;
+	width: 10vw;
+}
+
+#login-form-id input::placeholder {
+	text-align: center;
+	opacity: 0.5;
+}
+
+#login-form-id input {
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.8em;
+	border-radius: 5px;
+}
+
+#login-form-id button:hover {
+	background-color: #4CAF50;
+	opacity: 0.8;
+}
+
+#login-form-id button {
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.8em;
+	background-color: transparent; /* Green */
+	border: none;
+	color: white;
+	padding: 1% 2%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 4px;
 }

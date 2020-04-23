@@ -14,6 +14,7 @@ header {
 	font-size: 3em;
 	text-transform: uppercase;
 	font-family: "Oswald", Sans-serif;
+	top: 8%;
 }
 
 #menu-home-id .menu-toggler {
@@ -29,6 +30,7 @@ header {
 	z-index: 4;
 	opacity: 0;
 	cursor: pointer;
+	pointer: none;
 }
 
 #menu-home-id .menu-toggler + label {
@@ -121,6 +123,7 @@ header {
 	text-decoration: none;
 	font-size: 40px;
 	transition: 0.2s ease;
+	pointer-events: none;
 }
 
 #menu-home-id .menu-item a img {
@@ -136,6 +139,7 @@ header {
 
 #menu-home-id .menu-toggler:checked ~ ul .menu-item {
 	opacity: 1;
+	pointer-events: auto;
 }
 
 #menu-home-id .menu-toggler:checked ~ ul .menu-item:nth-child(1) {
