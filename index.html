@@ -65,11 +65,11 @@
 			</nav>
 		</div>
 		<div id="log-in-id">
-			<form id="log-in-id-form">
-				<input type="user" name="user" id="user-log-in" placeholder="Username" required>
-				<input type="password" name="pwd" id="pwd-log-in" placeholder="Password" required>
-				<input type="submit" name="submit" value="Sign In" onclick="login();">
-				<input type="reset" name="submit" value="Sign Out" id="logOut-btn-id">
+			<form>
+				<input type="text" id="user-log-in" placeholder="Username">
+				<input type="password" id="pwd-log-in" placeholder="Password">
+				<button type="button" onclick="login()">Sign In</button>
+				<button type="button" id="logOut-btn-id" >Sign Out</button>
 			</form>
 		</div>
 		<footer>
