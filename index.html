@@ -7,6 +7,7 @@
 		<link rel="shortcut icon" href="#">
 		<link rel="stylesheet" type="text/css" href="css/homepage.css">
 		<link rel="stylesheet" type="text/css" href="css/musics_portal.css">
+		<link rel="stylesheet" type="text/css" href="css/login.css">
 		
 	</head>
 	<body>
@@ -63,6 +64,14 @@
 				</ul>
 			</nav>
 		</div>
+		<div id="log-in-id">
+			<form id="log-in-id-form">
+				<input type="user" name="user" id="user-log-in" placeholder="Username" required>
+				<input type="password" name="pwd" id="pwd-log-in" placeholder="Password" required>
+				<input type="submit" name="submit" value="Sign In" onclick="login();">
+				<input type="reset" name="submit" value="Sign Out" id="logOut-btn-id">
+			</form>
+		</div>
 		<footer>
 			<div class="footer-container">
 				<div class="footer-content">
@@ -90,6 +99,7 @@
 		</ul>
 	</section>
 </div>
+<script type="text/javascript" src="javascripts/login.js"></script>
 <script type="text/javascript" src="javascripts/videoPlayer.js"></script>
 <script type="text/javascript" src="javascripts/home.js"></script>
 </body>

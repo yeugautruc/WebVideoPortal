@@ -1,0 +1,11 @@
+#log-in-id {
+	display: flex;
+	position: absolute;
+	margin-left: 0.5%;
+}
+#logOut-btn-id{
+	display: none;
+	position: absolute;
+	top: 1%;
+	left: 1%;
+}

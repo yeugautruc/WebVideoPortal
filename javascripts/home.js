@@ -9,6 +9,7 @@ function showHome() {
     document.getElementById('video-part').style.display = "none";
     document.getElementById('menu-checkbox').checked = false;;
     document.getElementById("slider").pause();
+    document.getElementById("click-me").style.display = "block";
 }
 
 function hideClick() {
