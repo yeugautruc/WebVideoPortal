@@ -13,10 +13,15 @@ function showHome() {
 }
 
 function hideClick() {
-    if (document.getElementById('menu-checkbox').checked) {
-        document.getElementById("click-me").style.display = "none";
+    if (!loggedIn) {
+        document.getElementById('menu-checkbox').checked = false;
+        alertHome("Please Login !");
     } else {
-        document.getElementById("click-me").style.display = "block";
+        if (document.getElementById('menu-checkbox').checked) {
+            document.getElementById("click-me").style.display = "none";
+        } else {
+            document.getElementById("click-me").style.display = "block";
+        }
     }
 }
 
@@ -44,4 +49,20 @@ function enterPortal(a) {
         default:
             // code block
     }
+}
+
+function alertHome(s) {
+    let alerts = document.getElementById('alert-container');
+    while (alerts.hasChildNodes()) {
+        alerts.removeChild(alerts.firstChild);
+    }
+    let newAlert = document.createElement('div');
+    let newSpan = document.createElement('span');
+    newAlert.setAttribute('class',"alert show");
+    newAlert.setAttribute('id',"alert-id");
+    newSpan.setAttribute('class',"msg");
+    newSpan.setAttribute('id',"msg-id");
+    newAlert.appendChild(newSpan);
+    alerts.appendChild(newAlert);
+    document.getElementById('msg-id').innerHTML = s;
 }

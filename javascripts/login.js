@@ -1,25 +1,27 @@
 let loggedIn = false;
 
-
-
-
 function login() {
     let usr = document.getElementById('user-log-in').value;
     let pwd = document.getElementById('pwd-log-in').value
-    console.log(document.getElementById('user-log-in').value);
-    console.log(document.getElementById('pwd-log-in').value);
 
     fetch('json/userData.json').then(response => {
         return response.json();
     }).then(data => {
-        console.log(data);
         for (i in data) {
-        	console.log(data[i].username);
-        	console.log(data[i].password);
             if (data[i].username == usr && data[i].password == pwd) {
                 loggedIn = true;
             }
         }
-    }).catch(err => {
-    });
+        if (loggedIn == true) {
+        	alertHome("You Are Logged In!");
+            document.getElementById('login-form-id').style.display = "none";
+            document.getElementById('logOut-btn-id').style.display = "block";
+        }
+    }).catch(err => {});
+}
+
+function logout() {
+    document.getElementById('login-form-id').style.display = "block";
+    document.getElementById('logOut-btn-id').style.display = "none";
+    loggedIn = false;
 }

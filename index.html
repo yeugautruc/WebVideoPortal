@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/homepage.css">
 		<link rel="stylesheet" type="text/css" href="css/musics_portal.css">
 		<link rel="stylesheet" type="text/css" href="css/login.css">
-		
+		<link rel="stylesheet" type="text/css" href="css/alert.css">
 	</head>
 	<body>
 		<div id="home-id">
@@ -65,12 +65,14 @@
 			</nav>
 		</div>
 		<div id="log-in-id">
-			<form>
+			<form id="login-form-id">
 				<input type="text" id="user-log-in" placeholder="Username">
 				<input type="password" id="pwd-log-in" placeholder="Password">
-				<button type="button" onclick="login()">Sign In</button>
-				<button type="button" id="logOut-btn-id" >Sign Out</button>
+				<button type="button" onclick="login();">Sign In</button>
 			</form>
+			<button type="button" id="logOut-btn-id" onclick="logout();" >Sign Out</button>
+		</div>
+		<div id="alert-container">
 		</div>
 		<footer>
 			<div class="footer-container">
