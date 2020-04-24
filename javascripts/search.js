@@ -7,7 +7,6 @@ function createList(objs) {
         const item = document.createElement('li');
         item.classList.add('list-group-item');
         let inputFS = "itemSearchClick(\"" + obj.source + "\","+obj.topic+")";
-        console.log(inputFS);
         item.setAttribute('onclick', inputFS);
         const text = document.createTextNode(obj.name);
         item.appendChild(text);

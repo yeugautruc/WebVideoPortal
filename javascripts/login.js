@@ -40,3 +40,14 @@ function logout() {
     document.getElementById('search-id').style.display = "none";
     loggedIn = false;
 }
+
+function focusSignin(a){
+    a.elements[0].style.background = "white";
+    a.elements[1].style.background = "white";
+    a.elements[0].style.opacity = "0.8";
+    a.elements[1].style.opacity = "0.8";
+}
+function focusSigninOut(a){
+    a.elements[0].style.background = "transparent";
+    a.elements[1].style.background = "transparent";
+}

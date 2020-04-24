@@ -67,8 +67,8 @@
 		</div>
 		<div id="log-in-id">
 			<form id="login-form-id">
-				<input type="text" id="user-log-in" placeholder="Username">
-				<input type="password" id="pwd-log-in" placeholder="Password">
+				<input type="text" id="user-log-in" placeholder="Username" onfocus="focusSignin(this.form);" onfocusout="focusSigninOut(this.form);">
+				<input type="password" id="pwd-log-in" placeholder="Password" onfocus="focusSignin(this.form);" onfocusout="focusSigninOut(this.form);">
 				<button type="button" onclick="login();">Sign In</button>
 			</form>
 			<button type="button" id="logOut-btn-id" onclick="logout();" >Logout</button>
