@@ -17,7 +17,6 @@ const list = document.getElementById('playlist-id');
 function createPlaylist(input) {
     clearList();
     for (i in input) {
-        console.log(input[i]);
         createItem(input[i]);
     }
 
@@ -31,10 +30,12 @@ function createPlaylist(input) {
         item.appendChild(img);
         list.appendChild(item);
     }
-
+if (!searching){
     document.getElementById('slider')
         .setAttribute('src', input[Math.floor(Math.random() * 3)].source);
+    }
     document.getElementById("slider").play();
+    searching = false;
 }
 
 function clearList() {

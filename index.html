@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/musics_portal.css">
 		<link rel="stylesheet" type="text/css" href="css/login.css">
 		<link rel="stylesheet" type="text/css" href="css/alert.css">
+		<link rel="stylesheet" type="text/css" href="css/search.css">
 	</head>
 	<body>
 		<div id="home-id">
@@ -74,40 +75,44 @@
 		</div>
 		<div id="alert-container">
 		</div>
-
 		<div id="search-id">
-			<p>Search</p>
-		</div>
-
-		<footer>
-			<div class="footer-container">
-				<div class="footer-content">
-					<p class="email-address">m.doan@ostfalia.de</p>
-					<p>WebProgrammierungSoSe2020</p>
-				</div>
+			<div class="input-group">
+				<span class="fa search"></span>
+				<input type="text" name="search" id="search-input-id" class="form-control" autocomplete="off" autofocus placeholder="search">
 			</div>
-		</footer>
+		<ul class="list-group" id="search-list-id"></ul>
 	</div>
-	<div id="video-part" style="display: none;">
-		<div class="menu">
-			<div class="home"><img src="images/ham-menu.svg"></div>
-			<div class="space"></div>
-			<div class="item"><a href="#" onclick="showHome();"><span>Home</span></a></div>
-			<div class="item"><a href="#" onclick="hideHome(1);"><span>Music</span></a></div>
-			<div class="item"><a href="#" onclick="hideHome(2);"><span>Funny</span></a></div>
-			<div class="item"><a href="#" onclick="hideHome(3);"><span>Sport</span></a></div>
-			<div class="item"><a href="#" onclick="hideHome(4);"><span>Learn</span></a></div>
-			<div class="item"><a href="#" onclick="hideHome(5);"><span>Game</span></a></div>
-			<div class="item"><a href="#" onclick="hideHome(6);"><span>News</span></a></div>
+	<footer>
+		<div class="footer-container">
+			<div class="footer-content">
+				<p class="email-address">m.doan@ostfalia.de</p>
+				<p>WebProgrammierungSoSe2020</p>
+			</div>
 		</div>
-		<section>
-		<video id="slider" class="content" controls loop></video>
-		<ul class="navigation" id="playlist-id">
-		</ul>
-	</section>
+	</footer>
 </div>
+<div id="video-part" style="display: none;">
+	<div class="menu">
+		<div class="home"><img src="images/ham-menu.svg"></div>
+		<div class="space"></div>
+		<div class="item"><a href="#" onclick="showHome();"><span>Home</span></a></div>
+		<div class="item"><a href="#" onclick="hideHome(1);"><span>Music</span></a></div>
+		<div class="item"><a href="#" onclick="hideHome(2);"><span>Funny</span></a></div>
+		<div class="item"><a href="#" onclick="hideHome(3);"><span>Sport</span></a></div>
+		<div class="item"><a href="#" onclick="hideHome(4);"><span>Learn</span></a></div>
+		<div class="item"><a href="#" onclick="hideHome(5);"><span>Game</span></a></div>
+		<div class="item"><a href="#" onclick="hideHome(6);"><span>News</span></a></div>
+	</div>
+	<section>
+	<video id="slider" class="content" controls loop></video>
+	<ul class="navigation" id="playlist-id">
+	</ul>
+</section>
+</div>
+
 <script type="text/javascript" src="javascripts/login.js"></script>
 <script type="text/javascript" src="javascripts/videoPlayer.js"></script>
 <script type="text/javascript" src="javascripts/home.js"></script>
+<script type="text/javascript" src="javascripts/search.js"></script>
 </body>
 </html>
