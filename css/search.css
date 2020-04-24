@@ -1,3 +1,6 @@
+#search-id{
+	display: none;
+}
 #search-id input {
 	display: block;
 	position: absolute;
@@ -6,6 +9,8 @@
 	top: 0.5vw;
 	right: 1vw;
 	color: black;
+	border-radius: 10px;
+	opacity: 0.7;
 }
 
 #search-id .list-group-item:hover {

@@ -1,26 +1,10 @@
-const target = [{
-    "name": "Can't Take My Eye Off You",
-    "source": "videos/CTOMEOY.mp4",
-    "thumbnail": "images/thumbnail/thumbnail-CTOMEDY.PNG"
-}, {
-    "name": "Can We Kiss Forever",
-    "source": "videos/CWKF.mp4",
-    "thumbnail": "images/thumbnail/thumbnail-CWKF.PNG"
-}, {
-    "name": "Love Me 3000",
-    "source": "videos/LM3000.mp4",
-    "thumbnail": "images/thumbnail/thumbnail-LM3000.PNG"
-}, {
-    "name": "Wonderful World",
-    "source": "videos/WAWW.mp4",
-    "thumbnail": "images/thumbnail/thumbnail-WWAW.PNG"
-}];
+
+
 const searchInput = document.getElementById('search-input-id');
 const listSearch = document.getElementById('search-list-id');
 let searching = false;
 
 function createList(objs) {
-    clearListSearch();
     for (const obj of objs) {
         const item = document.createElement('li');
         item.classList.add('list-group-item');
@@ -49,15 +33,18 @@ function noResultFound() {
     listSearch.appendChild(item);
 }
 searchInput.addEventListener('input', (event) => {
+
     let value = event.target.value;
     if (value && value.trim().length > 0) {
         value = value.trim().toLowerCase();
 
-        createList(target.filter(a => {
-            return a.name.toLowerCase().includes(value);
-        }));
+searchInJSon("json/sport.json",value);
+searchInJSon("json/music.json",value);
+
+        console.log(listSearch);
+clearListSearch();
     } else {
-        clearList();
+        clearListSearch();
     }
 
 });
@@ -65,6 +52,14 @@ searchInput.addEventListener('input', (event) => {
 function itemSearchClick(src) {
     searching = true;
     videoUrl(src);
-    console.log(document.getElementById('slider'));
     hideHome(1);
+}
+function searchInJSon(url,value){
+    fetch(url).then(response => {
+            return response.json();
+        }).then(data => {
+        createList(data.filter(a => {
+            return a.name.toLowerCase().includes(value);
+        }));
+        }).catch(err => {});
 }

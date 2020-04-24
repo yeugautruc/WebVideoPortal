@@ -24,6 +24,7 @@ function login() {
                 alertHome("You Are Logged In!");
                 document.getElementById('login-form-id').style.display = "none";
                 document.getElementById('logOut-btn-id').style.display = "block";
+                document.getElementById('search-id').style.display = "block";
             } else {
                 alertHome("Incorrect Password or Username!");
             }
