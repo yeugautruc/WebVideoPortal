@@ -13,11 +13,9 @@ function createList(objs) {
         listSearch.appendChild(item);;
     }
     let checkNoResult = false;
-    let countNoResult = 0;
     for (let i = 0; i < listSearch.children.length; i++) {
         if (listSearch.children[i].innerHTML === "No Result Found!") {
             checkNoResult = true;
-            countNoResult++;
         }
     }
     if (objs.length === 0 && !checkNoResult) {
