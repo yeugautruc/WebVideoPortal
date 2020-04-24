@@ -25,6 +25,7 @@ function login() {
                 document.getElementById('login-form-id').style.display = "none";
                 document.getElementById('logOut-btn-id').style.display = "block";
                 document.getElementById('search-id').style.display = "block";
+                document.getElementById('cover-id').setAttribute('src','images/cover2.jpg');
             } else {
                 alertHome("Incorrect Password or Username!");
             }
@@ -39,6 +40,8 @@ function logout() {
     document.getElementById('logOut-btn-id').style.display = "none";
     document.getElementById('search-id').style.display = "none";
     loggedIn = false;
+    document.getElementById('cover-id').setAttribute('src','images/cover.jpg');
+            
 }
 
 function focusSignin(a){
