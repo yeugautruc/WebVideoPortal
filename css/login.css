@@ -37,8 +37,6 @@
 	font-size: 1.2em;
 }
 
-#login-form-id input::onfocus {
-}
 
 #login-form-id input {
 	font-family: 'Poppins', sans-serif;
@@ -46,7 +44,7 @@
 	border-radius: 5px;
 	padding: 0vw 0.5vw;
 	background: transparent;
-	color: white;
+	color: black;
 	height: 2vw;
 }
 
