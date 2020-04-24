@@ -1,16 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
 #search-id{
 	display: none;
 }
+#search-id input::placeholder {
+	font-size: 1em;
+	text-align: center;
+}
+#search-id input:hover {
+	opacity: 0.6;
+	font-size: 2em;
+}
 #search-id input {
+	font-family: 'Poppins', sans-serif;
 	display: block;
 	position: absolute;
 	margin-left: 0.5%;
-	font-size: 2em;
+	padding: 0vw 1vw;
+	font-size: 1.5em;
 	top: 0.5vw;
 	right: 1vw;
 	color: black;
 	border-radius: 10px;
-	opacity: 0.7;
+	opacity: 0.8;
 }
 
 #search-id .list-group-item:hover {
@@ -19,6 +31,7 @@
 }
 
 #search-id .list-group-item {
+	font-family: 'Poppins', sans-serif;
 	display: flex;
 	text-align: right;
 	top: 10vh;
@@ -32,5 +45,5 @@
 	position: absolute;
 	top: 5vh;
 	right: 1vh;
-	font-size: 2em;
+	font-size: 1.5em;
 }

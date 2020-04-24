@@ -35,7 +35,7 @@ function enterPortal(a) {
             readJson('json/music.json');
             break;
         case 3:
-            readJson('json/music.json');
+            readJson('json/sport.json');
             break;
         case 4:
             readJson('json/music.json');

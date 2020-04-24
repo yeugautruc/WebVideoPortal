@@ -37,5 +37,6 @@ function logout() {
     document.getElementById('login-form-id').reset();
     document.getElementById('login-form-id').style.display = "block";
     document.getElementById('logOut-btn-id').style.display = "none";
+    document.getElementById('search-id').style.display = "none";
     loggedIn = false;
 }

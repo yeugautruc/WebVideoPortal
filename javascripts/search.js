@@ -1,5 +1,3 @@
-
-
 const searchInput = document.getElementById('search-input-id');
 const listSearch = document.getElementById('search-list-id');
 let searching = false;
@@ -8,7 +6,8 @@ function createList(objs) {
     for (const obj of objs) {
         const item = document.createElement('li');
         item.classList.add('list-group-item');
-        let inputFS = "itemSearchClick(\"" + obj.source + "\")";
+        let inputFS = "itemSearchClick(\"" + obj.source + "\","+obj.topic+")";
+        console.log(inputFS);
         item.setAttribute('onclick', inputFS);
         const text = document.createTextNode(obj.name);
         item.appendChild(text);
@@ -38,28 +37,29 @@ searchInput.addEventListener('input', (event) => {
     if (value && value.trim().length > 0) {
         value = value.trim().toLowerCase();
 
-searchInJSon("json/sport.json",value);
-searchInJSon("json/music.json",value);
+        searchInJSon("json/sport.json", value);
+        searchInJSon("json/music.json", value);
 
         console.log(listSearch);
-clearListSearch();
+        clearListSearch();
     } else {
         clearListSearch();
     }
 
 });
 
-function itemSearchClick(src) {
+function itemSearchClick(src,value) {
     searching = true;
     videoUrl(src);
-    hideHome(1);
+    hideHome(value);
 }
-function searchInJSon(url,value){
+
+function searchInJSon(url, value) {
     fetch(url).then(response => {
-            return response.json();
-        }).then(data => {
+        return response.json();
+    }).then(data => {
         createList(data.filter(a => {
             return a.name.toLowerCase().includes(value);
         }));
-        }).catch(err => {});
+    }).catch(err => {});
 }
