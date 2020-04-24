@@ -6,14 +6,23 @@ function createList(objs) {
     for (const obj of objs) {
         const item = document.createElement('li');
         item.classList.add('list-group-item');
-        let inputFS = "itemSearchClick(\"" + obj.source + "\","+obj.topic+")";
+        let inputFS = "itemSearchClick(\"" + obj.source + "\"," + obj.topic + ")";
         item.setAttribute('onclick', inputFS);
         const text = document.createTextNode(obj.name);
         item.appendChild(text);
         listSearch.appendChild(item);;
     }
-    if (objs.length === 0) {
+    console.log("fuck");
+    let checkNoResult = false;
+    for (let i = 0; i < listSearch.children.length; i++) {
+        if (listSearch.children[i].innerHTML === "No Result Found!") {
+            checkNoResult = true;
+        }
+    }
+
+    if (objs.length === 0 && !checkNoResult) {
         noResultFound();
+        checkNoResult = false;
     }
 }
 
@@ -26,6 +35,7 @@ function clearListSearch() {
 function noResultFound() {
     const item = document.createElement('li');
     item.classList.add('list-group-item');
+    item.setAttribute('style', 'pointer-events: none;');
     const text = document.createTextNode("No Result Found!");
     item.appendChild(text);
     listSearch.appendChild(item);
@@ -39,8 +49,9 @@ searchInput.addEventListener('input', (event) => {
         searchInJSon("json/sport.json", value);
         searchInJSon("json/music.json", value);
         searchInJSon("json/funny.json", value);
-
-        console.log(listSearch);
+        searchInJSon("json/game.json", value);
+        searchInJSon("json/news.json", value);
+        searchInJSon("json/learn.json", value);
         clearListSearch();
     } else {
         clearListSearch();
@@ -48,7 +59,7 @@ searchInput.addEventListener('input', (event) => {
 
 });
 
-function itemSearchClick(src,value) {
+function itemSearchClick(src, value) {
     searching = true;
     videoUrl(src);
     hideHome(value);

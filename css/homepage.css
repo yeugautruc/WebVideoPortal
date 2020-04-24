@@ -8,18 +8,6 @@ body {
 	box-sizing: border-box;
 }
 
-header:hover {
-	font-size: 3.2em;
-	text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
-}
-header {
-	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-	text-align: center;
-	font-size: 3em;
-	text-transform: uppercase;
-	font-family: "Oswald", Sans-serif;
-	top: 8%;
-}
 
 #menu-home-id .menu-toggler {
 	position: absolute;
@@ -245,13 +233,23 @@ header {
 	margin-right: 0;
 }
 
+.glow:hover {
+	font-size: 6.5em;
+	text-shadow: -1px 0 pink, 0 1px pink, 1px 0 pink, 0 -1px pink;
+	transform: translateX(-1vw);
+}
 .glow {
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	font-size: 6em;
+	text-transform: uppercase;
+	font-family: "Oswald", Sans-serif;
+	top: 8%;
+	left: 25vw;
+	color: white;
 	position: absolute;
-	left: 39%;
 	z-index: 20;
-	color: #121212;
 	text-shadow: 1px 2px #e6e6d8, 2px 3px #c6a39a;
-	opacity: 0.7;
+	opacity: 0.4;
 }
 
 .click-me p:hover {
@@ -313,6 +311,10 @@ header {
 
 	.click-me img {
 		display: none;
+	}
+	.glow{
+		font-size: 3em;
+		left:5vw;
 	}
 
 }

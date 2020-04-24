@@ -32,10 +32,10 @@
 
 #search-id .list-group-item {
 	font-family: 'Poppins', sans-serif;
-	display: flex;
+	display: block;
 	text-align: right;
 	top: 10vh;
-	right: 0vh;
+	left: 10vw;
 	color: white;
 	text-shadow: 2px 1px #00040a;
 	cursor: pointer;

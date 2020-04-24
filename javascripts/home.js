@@ -10,6 +10,8 @@ function showHome() {
     document.getElementById('menu-checkbox').checked = false;;
     document.getElementById("slider").pause();
     document.getElementById("click-me").style.display = "block";
+    document.getElementById('search-input-id').value = "";
+    clearListSearch();
 }
 
 function hideClick() {
