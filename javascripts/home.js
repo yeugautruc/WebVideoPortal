@@ -32,22 +32,21 @@ function enterPortal(a) {
             readJson('json/music.json');
             break;
         case 2:
-            readJson('json/music.json');
-            break;
-        case 3:
             readJson('json/sport.json');
             break;
+        case 3:
+            readJson('json/game.json');
+            break;
         case 4:
-            readJson('json/music.json');
+            readJson('json/learn.json');
             break;
         case 5:
-            readJson('json/music.json');
+            readJson('json/funny.json');
             break;
         case 6:
-            readJson('json/music.json');
+            readJson('json/news.json');
             break;
         default:
-            // code block
     }
 }
 

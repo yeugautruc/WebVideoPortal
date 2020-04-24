@@ -1,21 +1,16 @@
 [{
-    "name": "Can't Take My Eye Off You sport",
-    "source": "videos/CTOMEOY.mp4",
-    "thumbnail": "images/thumbnail/thumbnail-CTOMEDY.PNG",
-    "topic":3
+    "name": "Best Ping Pong Shots 2018",
+    "source": "videos/BPPS.mp4",
+    "thumbnail": "images/thumbnail/BPPS.mp4.jpg",
+    "topic":2
 }, {
-    "name": "Can We Kiss Forever sport",
-    "source": "videos/CWKF.mp4",
-    "thumbnail": "images/thumbnail/thumbnail-CWKF.PNG",
-    "topic":3
+    "name": "Top 10 Legendary Moments In Football",
+    "source": "videos/LMIF.mp4",
+    "thumbnail": "images/thumbnail/LMIF.mp4.jpg",
+    "topic":2
 }, {
-    "name": "Love Me 3000 sport",
-    "source": "videos/LM3000.mp4",
-    "thumbnail": "images/thumbnail/thumbnail-LM3000.PNG",
-    "topic":3
-}, {
-    "name": "Wonderful World sport",
-    "source": "videos/WAWW.mp4",
-    "thumbnail": "images/thumbnail/thumbnail-WWAW.PNG",
-    "topic":3
+    "name": "Longest rally in the history of badminton",
+    "source": "videos/LROB.mp4",
+    "thumbnail": "images/thumbnail/LROB.mp4.jpg",
+    "topic":2
 }]

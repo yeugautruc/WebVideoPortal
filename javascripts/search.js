@@ -38,6 +38,7 @@ searchInput.addEventListener('input', (event) => {
 
         searchInJSon("json/sport.json", value);
         searchInJSon("json/music.json", value);
+        searchInJSon("json/funny.json", value);
 
         console.log(listSearch);
         clearListSearch();
