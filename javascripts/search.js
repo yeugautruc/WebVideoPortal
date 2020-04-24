@@ -3,6 +3,7 @@ const listSearch = document.getElementById('search-list-id');
 let searching = false;
 
 function createList(objs) {
+
     for (const obj of objs) {
         const item = document.createElement('li');
         item.classList.add('list-group-item');
@@ -27,7 +28,11 @@ function createList(objs) {
             if (listSearch.children[i].innerHTML === "No Result Found!") {
                 listSearch.removeChild(listSearch.children[i]);
             }
-
+        }
+    }
+    if (listSearch.children.length > 4) {
+        for (let i = 4; i < listSearch.children.length; i++) {
+            listSearch.removeChild(listSearch.children[i]);
         }
     }
 }
