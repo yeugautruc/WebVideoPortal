@@ -12,17 +12,25 @@ function createList(objs) {
         item.appendChild(text);
         listSearch.appendChild(item);;
     }
-    console.log("fuck");
     let checkNoResult = false;
+    let countNoResult = 0;
     for (let i = 0; i < listSearch.children.length; i++) {
         if (listSearch.children[i].innerHTML === "No Result Found!") {
             checkNoResult = true;
+            countNoResult++;
         }
     }
-
     if (objs.length === 0 && !checkNoResult) {
         noResultFound();
         checkNoResult = false;
+    }
+    if (listSearch.children.length > 1) {
+        for (let i = 0; i < listSearch.children.length; i++) {
+            if (listSearch.children[i].innerHTML === "No Result Found!") {
+                listSearch.removeChild(listSearch.children[i]);
+            }
+
+        }
     }
 }
 
