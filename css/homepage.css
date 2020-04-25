@@ -8,7 +8,6 @@ body {
 	box-sizing: border-box;
 }
 
-
 #menu-home-id .menu-toggler {
 	position: absolute;
 	display: block;
@@ -77,15 +76,15 @@ body {
 #menu-home-id .menu-toggler:checked + label:before, #menu-home-id .menu-toggler:checked + label:after {
 	top: 0;
 	width: 100px;
-	transform-origin: 50% 50%; 
+	transform-origin: 50% 50%;
 }
 
 #menu-home-id .menu-toggler:checked + label:before {
-	transform: rotate(45deg) 
+	transform: rotate(45deg)
 }
 
 #menu-home-id .menu-toggler:checked + label:after {
-	transform: rotate(-45deg) 
+	transform: rotate(-45deg)
 }
 
 /*rotate to transform menu to exit button*/
@@ -234,12 +233,13 @@ body {
 }
 
 .glow:hover {
-	font-size: 4.5em;
+	font-size: 4.2em;
 	text-shadow: -1px 0 pink, 0 1px pink, 1px 0 pink, 0 -1px pink;
 	transform: translateX(-1vw);
 	transition: transform 1s ease;
 	opacity: 0.7;
 }
+
 .glow {
 	font-size: 4em;
 	text-transform: uppercase;
@@ -253,24 +253,24 @@ body {
 	opacity: 0.5;
 	background: pink;
 	border-radius: 20px;
+	animation: video-portal-animation 3s ease;
+	animation-iteration-count: infinite;
 }
 
-.click-me p:hover {
-	transform: translateY(-2vw) translateX(2vw);
-	transition: transform 1s ease;
+@keyframes video-portal-animation {
+	50% {
+		text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
+	}
+
 }
-.click-me img:hover {
-	transform: translateY(-2vw) translateX(2vw);
-	transition: transform 1s ease;
-	opacity: 0.7;
-}
+
 .click-me {
 	display: flex;
 	margin: 0px;
 	position: absolute;
 	background-color: transparent;
 	top: 40%;
-	left: 15%;
+	left: 7%;
 	z-index: 3;
 	list-style: none;
 	margin: 0px;
@@ -280,23 +280,37 @@ body {
 }
 
 .click-me p {
-	font-size: 60px;
+	font-size: 80px;
 	font-family: "Oswald", Sans-serif;
 	text-transform: uppercase;
 	color: #121212;
 	opacity: 0.6;
 	transform: rotate(-8deg);
 	text-shadow: 4px 5px #e6e6d8, 6px 7px #c6a39a;
+	animation: clickAnimation 4s ease;
+	animation-iteration-count: infinite;
+}
+
+@keyframes clickAnimation {
+	50% {
+		transform: translateY(-1vw) translateX(5vw);
+	}
+
 }
 
 .click-me img {
 	margin-left: 10%;
-	width: 30%;
-	height: 30%;
+	width: 45%;
+	height: 45%;
 	opacity: 0.5;
+	animation: clickAnimation 4s ease;
+	animation-iteration-count: infinite;
+	position: absolute;
+	top: 20%;
+	left: 38%;
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1024px) {
 	#menu-home-id .menu-item {
 		width: 110px;
 		width: 110px;
@@ -307,19 +321,35 @@ body {
 		bottom: 30%;
 	}
 
+	.click-me p {
+		animation: clickAnimation2 2s ease;
+		animation-iteration-count: infinite;
+	}
+
 	.click-me {
-		top: 20%;
+		bottom: 19%;
 		left: 35%;
 	}
 
 	.click-me img {
 		display: none;
 	}
-	.glow{
+
+	@keyframes clickAnimation2 {
+		50% {
+			transform: rotate(-90deg);
+			transform: translateY(-5vw) translateX(1vw);
+		}
+
+	}
+
+	.glow {
 		font-size: 2em;
-		right:1vw;
+		right: 1vw;
 		top: 90vh;
 		opacity: 0.5;
 	}
 
-}
+	.glow:hover {
+		font-size: 2.2em;
+	}

@@ -21,6 +21,7 @@
 
 .alert.show {
 	animation: slider 8s ease forwards;
+	
 }
 
 .alert.hide {
