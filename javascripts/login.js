@@ -26,7 +26,9 @@ function login() {
                     document.getElementById('login-form-id').style.display = "none";
                     document.getElementById('logOut-btn-id').style.display = "block";
                     document.getElementById('search-id').style.display = "block";
-                    document.getElementById('cover-id').setAttribute('src', 'images/cover2.jpg');
+                    document.getElementById('cover-id').style.background = "url('images/cover2.jpg')";
+                    document.getElementById('cover-id').style.backgroundSize="cover";
+                    document.getElementById('cover-id').style.animation="none";
                 } else {
                     alertHome("Incorrect Password or Username!");
                 }
@@ -42,8 +44,9 @@ function logout() {
     document.getElementById('logOut-btn-id').style.display = "none";
     document.getElementById('search-id').style.display = "none";
     loggedIn = false;
-    document.getElementById('cover-id').setAttribute('src', 'images/cover.jpg');
-
+    document.getElementById('cover-id').style.background = "url('images/cover.jpg')";
+    document.getElementById('cover-id').style.backgroundSize="cover";
+    document.getElementById('cover-id').style.animation="coverAnimation 5s ease infinite";
 }
 
 function focusSignin(a) {
