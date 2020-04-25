@@ -23,6 +23,9 @@ function createPlaylist(input) {
     function createItem(i) {
         const item = document.createElement('li');
         const img = document.createElement('img');
+        const text = document.createTextNode(i.name);
+        console.log(item);
+        item.appendChild(text);
         item.classList.add('navigation-item');
         img.setAttribute('src', i.thumbnail);
         let onClickString = "videoUrl('" + i.source + "')"

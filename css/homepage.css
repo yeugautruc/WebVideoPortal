@@ -72,6 +72,7 @@ body {
 
 #menu-home-id .menu-toggler:checked + label {
 	background: transparent;
+	border:none;
 }
 
 #menu-home-id .menu-toggler:checked + label:before, #menu-home-id .menu-toggler:checked + label:after {
@@ -218,7 +219,7 @@ body {
 	top: 0;
 	background: url(../images/cover.jpg);
 	background-size: 100% 100%;
-	animation: coverAnimation 25s ease infinite;
+	animation: coverAnimation 25s infinite;
 }
 @keyframes coverAnimation{
 	20%{
