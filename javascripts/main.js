@@ -62,10 +62,10 @@ function alertHome(s) {
     }
     let newAlert = document.createElement('div');
     let newSpan = document.createElement('span');
-    newAlert.setAttribute('class',"alert show");
-    newAlert.setAttribute('id',"alert-id");
-    newSpan.setAttribute('class',"msg");
-    newSpan.setAttribute('id',"msg-id");
+    newAlert.setAttribute('class', "alert show");
+    newAlert.setAttribute('id', "alert-id");
+    newSpan.setAttribute('class', "msg");
+    newSpan.setAttribute('id', "msg-id");
     newAlert.appendChild(newSpan);
     alerts.appendChild(newAlert);
     document.getElementById('msg-id').innerHTML = s;
@@ -102,8 +102,8 @@ function login() {
                     document.getElementById('logOut-btn-id').style.display = "block";
                     document.getElementById('search-id').style.display = "block";
                     document.getElementById('cover-id').style.background = "url('images/cover2.jpg')";
-                    document.getElementById('cover-id').style.backgroundSize="cover";
-                    document.getElementById('cover-id').style.animation="none";
+                    document.getElementById('cover-id').style.backgroundSize = "cover";
+                    document.getElementById('cover-id').style.animation = "none";
                 } else {
                     alertHome("Incorrect Password or Username!");
                 }
@@ -120,8 +120,8 @@ function logout() {
     document.getElementById('search-id').style.display = "none";
     loggedIn = false;
     document.getElementById('cover-id').style.background = "url('images/cover.jpg')";
-    document.getElementById('cover-id').style.backgroundSize="cover";
-    document.getElementById('cover-id').style.animation="coverAnimation 25s ease infinite";
+    document.getElementById('cover-id').style.backgroundSize = "cover";
+    document.getElementById('cover-id').style.animation = "coverAnimation 25s ease infinite";
 }
 
 function focusSignin(a) {
@@ -262,9 +262,9 @@ function createPlaylist(input) {
         item.appendChild(img);
         list.appendChild(item);
     }
-if (!searching){
-    document.getElementById('slider')
-        .setAttribute('src', input[Math.floor(Math.random() * 3)].source);
+    if (!searching) {
+        document.getElementById('slider')
+            .setAttribute('src', input[Math.floor(Math.random() * 3)].source);
     }
     document.getElementById("slider").play();
     searching = false;
@@ -275,12 +275,30 @@ function clearList() {
         list.removeChild(list.firstChild);
     }
 }
-function endedVideo(){
+
+function endedVideo() {
     let randomSrc = list.children[Math.floor(Math.random() * list.children.length)]
-    .getAttribute('onclick');
-    randomSrc =  randomSrc.replace("videoUrl('","");
-    randomSrc =  randomSrc.replace("')","");
+        .getAttribute('onclick');
+    randomSrc = randomSrc.replace("videoUrl('", "");
+    randomSrc = randomSrc.replace("')", "");
     videoUrl(randomSrc);
 }
-
-
+var timeout;
+document.onmousemove = function() {
+    document.getElementById('playlist-id').style.display = "flex";
+    document.getElementById('menu-playlist-id').style.display = "inherit";
+    clearTimeout(timeout);
+    timeout = setTimeout(function() {
+        document.getElementById('playlist-id').style.display = "none";
+        document.getElementById('menu-playlist-id').style.display = "none";
+    }, 2500);
+}
+window.addEventListener('touchstart', function() {
+    document.getElementById('playlist-id').style.display = "flex";
+    document.getElementById('menu-playlist-id').style.display = "inherit";
+    clearTimeout(timeout);
+    timeout = setTimeout(function() {
+        document.getElementById('playlist-id').style.display = "none";
+        document.getElementById('menu-playlist-id').style.display = "none";
+    }, 2500);
+});

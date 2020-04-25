@@ -31,7 +31,7 @@
 	justify-content: center;
 	align-items: flex-end;
 	transition-delay: 0.5s ease;
-	opacity: 0.2
+	opacity: 0.3
 }
 
 #video-part section .navigation li:hover{
@@ -56,8 +56,8 @@
 }
 
 #video-part section .navigation li img {
-	width: 150px;
-	height: 100px;
+	width: 250px;
+	height: 160px;
 	transition: 0.7s ease;
 	opacity: 0.9;
 	border-radius: 15px;
@@ -65,8 +65,8 @@
 }
 
 #video-part section .navigation li img:hover {
-	width: 350px;
-	height: 220px;
+	width: 450px;
+	height: 320px;
 	opacity: 0.9
 }
 
@@ -87,11 +87,11 @@
 
 #video-part .menu img {
 	width: 50%;
-	opacity: 0.2
+	opacity: 0.3
 }
 
 #video-part .menu img:hover {
-	opacity: 0.5;
+	opacity: 0.6;
 	pointer-events: all
 }
 
@@ -112,7 +112,7 @@
 
 #video-part .item {
 	text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
-	font-size: 2em;
+	font-size: 3em;
 	position: relative;
 	display: inline-block;
 	margin-left: 30px;

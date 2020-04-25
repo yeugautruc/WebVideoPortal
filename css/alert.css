@@ -34,7 +34,7 @@
 	}
 
 	40% {
-		transform: translateX(-10%);
+		transform: translateX(-20%);
 	}
 
 	80% {
@@ -42,11 +42,16 @@
 	}
 
 	95% {
-		transform: translateX(10%);
+		transform: translateX(15%);
 	}
 
+	99% {
+		transform: translateX(5%);
+		opacity: 0;
+		display: none
+	}
 	100% {
-		transform: translateX(110%);
+		transform: translateX(-10%);
 		opacity: 0;
 		display: none
 	}

@@ -349,7 +349,7 @@ body {
 	}
 
 	.click-me {
-		bottom: 19%;
+		bottom: 10%;
 		left: 35%;
 	}
 
@@ -360,7 +360,7 @@ body {
 	@keyframes clickAnimation2 {
 		50% {
 			transform: rotate(-90deg);
-			transform: translateY(-5vw) translateX(1vw);
+			transform: translateY(-2vw) translateX(1vw);
 		}
 
 	}
