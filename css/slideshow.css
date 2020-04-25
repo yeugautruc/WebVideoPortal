@@ -1,0 +1,8 @@
+.preview-img {
+	position: absolute;
+	z-index: 1;
+	top: 10vh;
+	left: -5vh;
+	border:1px solid white; 
+	border-radius: 10px;
+}
