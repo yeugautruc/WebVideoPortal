@@ -4,7 +4,6 @@
 	display: block;
 	position: absolute;
 	margin-left: 0.5vw;
-	height: 100vw;
 }
 
 #logOut-btn-id:hover {
@@ -22,12 +21,13 @@
 	left: 1vw;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1em;
-	background-color: rgba(252, 252, 252, 0.1); /* Green */
+	background-color: rgba(252, 252, 252, 0.5);
 	border: none;
 	color: white;
 	text-decoration: none;
-	border-radius: 4px;
+	border-radius: 10px;
 	width: 15vw;
+	text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
 }
 
 #login-form-id input::placeholder {
@@ -41,11 +41,11 @@
 #login-form-id input {
 	font-family: 'Poppins', sans-serif;
 	font-size: 0.8em;
-	border-radius: 5px;
-	padding: 0vw 0.5vw;
+	border-radius: 10px;
+	padding: 0vw 1vw;
 	background: transparent;
 	color: black;
-	height: 2vw;
+	height: 3vh;
 }
 
 #login-form-id button:hover {
@@ -60,11 +60,24 @@
 #login-form-id button {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1em;
-	background-color: transparent; /* Green */
+	background-color: rgba(230, 239, 250, 0.3);
 	border: none;
 	color: white;
 	text-align: center;
 	text-decoration: none;
 	border-radius: 4px;
 	width: 10vw;
+	text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
+}
+@media only screen and (max-width:1024px) {
+	#login-form-id input {
+	font-size: 1em;
+	height: 4vh;
+	padding: 0vw 1.5vw;
+	}
+	#login-form-id button {
+		width: 30vw;
+		margin-top: 1vh;
+		font-size: 1.5em;
+	}
 }

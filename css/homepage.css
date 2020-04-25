@@ -21,7 +21,6 @@ body {
 	z-index: 4;
 	opacity: 0;
 	cursor: pointer;
-	pointer: none;
 }
 
 #menu-home-id .menu-toggler + label {
