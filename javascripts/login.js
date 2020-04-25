@@ -46,7 +46,7 @@ function logout() {
     loggedIn = false;
     document.getElementById('cover-id').style.background = "url('images/cover.jpg')";
     document.getElementById('cover-id').style.backgroundSize="cover";
-    document.getElementById('cover-id').style.animation="coverAnimation 5s ease infinite";
+    document.getElementById('cover-id').style.animation="coverAnimation 25s ease infinite";
 }
 
 function focusSignin(a) {

@@ -43,5 +43,12 @@ function clearList() {
         list.removeChild(list.firstChild);
     }
 }
+function endedVideo(){
+    let randomSrc = list.children[Math.floor(Math.random() * list.children.length)]
+    .getAttribute('onclick');
+    randomSrc =  randomSrc.replace("videoUrl('","");
+    randomSrc =  randomSrc.replace("')","");
+    videoUrl(randomSrc);
+}
 
 

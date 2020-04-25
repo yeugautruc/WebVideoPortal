@@ -2,7 +2,7 @@
 
 body {
 	overflow: hidden;
-	background: white;
+	background: rgba(23, 23, 25, 0.8);
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
@@ -217,25 +217,25 @@ body {
 	left: 0;
 	top: 0;
 	background: url(../images/cover.jpg);
-	background-size: cover;
+	background-size: 100% 100%;
 	animation: coverAnimation 25s ease infinite;
 }
 @keyframes coverAnimation{
 	20%{
 		background: url(../images/cover2.jpg);
-		background-size: cover;
+		background-size: 100% 100%;
 	}
 	40%{
 		background: url(../images/cover3.jpg);
-		background-size: cover;
+		background-size: 100% 100%;
 	}
 	60%{
 		background: url(../images/cover4.jpg);
-		background-size: cover;
+		background-size: 100% 100%;
 	}
 	80%{
 		background: url(../images/cover5.jpg);
-		background-size: cover;
+		background-size: 100% 100%;
 	}
 }
 
