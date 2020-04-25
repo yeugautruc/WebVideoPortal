@@ -33,11 +33,10 @@
 	transition-delay: 0.5s ease;
 	opacity: 0.2
 }
-#video-part section .navigation li{
-	color: transparent;
-}
+
 #video-part section .navigation li:hover{
 	color: white;
+	text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
 	text-align: center;
 	font-size: 1.5em;
 	font-family: 'Lato';
@@ -52,7 +51,8 @@
 	cursor: pointer;
 	margin: 0 10px;
 	background: transparent;
-	opacity: 0.9
+	opacity: 0.9;
+	color: transparent;
 }
 
 #video-part section .navigation li img {
