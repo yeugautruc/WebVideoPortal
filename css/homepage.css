@@ -103,7 +103,6 @@ body {
 	transition: 0.6s;
 	pointer-events: none;
 	transform-origin: 0% 100%;
-	background: yellow;
 }
 
 #menu-home-id .menu-item a {
@@ -324,7 +323,21 @@ body {
 	left: 38%;
 }
 
+@media only screen and (max-width:1400px) {
+	#menu-home-id .menu-item {
+		top: 20%;
+		bottom: 51%;
+		left: 50%;
+		right: 35%;
+	}
+}
 @media only screen and (max-width:1024px) {
+	#menu-home-id .menu-item {
+		top: 25%;
+		bottom: 51%;
+		left: 50%;
+		right: 35%;
+	}
 	.click-me p {
 		animation: clickAnimation2 2s ease;
 		animation-iteration-count: infinite;
@@ -386,7 +399,7 @@ body {
 
 @media only screen and (max-width:680px) {
 	#menu-home-id .menu-item {
-		top: 40%;
+		top: 35%;
 		bottom: 51%;
 		left: 50%;
 		right: 35%;
@@ -408,27 +421,27 @@ body {
 		right: 60%;
 	}
 	#menu-home-id .menu-toggler:checked ~ ul .menu-item:nth-child(1) {
-		transform: rotate(0deg)	translate(40px);
+		transform: rotate(0deg)	translate(50px);
 	}
 
 	#menu-home-id .menu-toggler:checked ~ ul .menu-item:nth-child(2) {
-		transform: rotate(60deg) translate(40px);
+		transform: rotate(60deg) translate(50px);
 	}
 
 	#menu-home-id .menu-toggler:checked ~ ul .menu-item:nth-child(3) {
-		transform: rotate(120deg) translate(40px);
+		transform: rotate(120deg) translate(50px);
 	}
 
 	#menu-home-id .menu-toggler:checked ~ ul .menu-item:nth-child(4) {
-		transform: rotate(180deg) translate(40px);
+		transform: rotate(180deg) translate(50px);
 	}
 
 	#menu-home-id .menu-toggler:checked ~ ul .menu-item:nth-child(5) {
-		transform: rotate(240deg) translate(40px);
+		transform: rotate(240deg) translate(50px);
 	}
 
 	#menu-home-id .menu-toggler:checked ~ ul .menu-item:nth-child(6) {
-		transform: rotate(300deg) translate(40px);
+		transform: rotate(300deg) translate(50px);
 	}
 
 
