@@ -10,7 +10,7 @@ function hideHome(a) {
 function showHome() {
     document.getElementById('home-id').style.display = "block";
     document.getElementById('video-part').style.display = "none";
-    document.getElementById('menu-checkbox').checked = false;;
+    document.getElementById('menu-checkbox').checked = false;
     document.getElementById("slider").pause();
     document.getElementById("click-me").style.display = "block";
     document.getElementById('search-input-id').value = "";
@@ -119,6 +119,7 @@ function logout() {
     document.getElementById('logOut-btn-id').style.display = "none";
     document.getElementById('search-id').style.display = "none";
     loggedIn = false;
+    document.getElementById('menu-checkbox').checked = false;
     document.getElementById('cover-id').style.background = "url('images/cover.jpg')";
     document.getElementById('cover-id').style.backgroundSize = "cover";
     document.getElementById('cover-id').style.animation = "coverAnimation 25s ease infinite";
