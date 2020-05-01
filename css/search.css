@@ -46,6 +46,7 @@
 	top: 5vh;
 	right: 1vh;
 	font-size: 1.5em;
+	display: block;
 }
 .preview-search{
 	position: absolute;

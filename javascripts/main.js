@@ -156,6 +156,7 @@ function createList(objs) {
         const text = document.createTextNode(obj.name);
         item.appendChild(text);
         listSearch.appendChild(item);;
+        console.log(item);
     }
     let checkNoResult = false;
     for (let i = 0; i < listSearch.children.length; i++) {
@@ -218,6 +219,7 @@ function itemSearchClick(src, value) {
     searching = true;
     videoUrl(src);
     hideHome(value);
+    console.log("fuck");
 }
 function createImgOnSearch(src){
     const img = document.createElement('img');
@@ -243,7 +245,12 @@ function searchInJSon(url, value) {
         }));
     }).catch(err => {});
 }
-
+function focusOutSearch(){
+    document.getElementById('search-list-id').style.visibility = "hidden";
+}
+function focusSearch(){
+    document.getElementById('search-list-id').style.visibility = "visible";
+}
 
 /********************************************************
 VideoPlay
