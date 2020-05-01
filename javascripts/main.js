@@ -150,6 +150,9 @@ function createList(objs) {
         item.classList.add('list-group-item');
         let inputFS = "itemSearchClick(\"" + obj.source + "\"," + obj.topic + ")";
         item.setAttribute('onclick', inputFS);
+        let inputMouseOver = "createImgOnSearch(\""+obj.thumbnail+"\");";
+        item.setAttribute('onmouseover',inputMouseOver);
+        item.setAttribute('onmouseout','removeImgOnSearch();');
         const text = document.createTextNode(obj.name);
         item.appendChild(text);
         listSearch.appendChild(item);;
@@ -216,6 +219,20 @@ function itemSearchClick(src, value) {
     videoUrl(src);
     hideHome(value);
 }
+function createImgOnSearch(src){
+    const img = document.createElement('img');
+    img.classList.add('preview-search');
+    img.setAttribute('src',src);
+    let div = document.getElementById('video-search-img-container');
+    div.appendChild(img);
+}
+function removeImgOnSearch(){
+    let item = document.getElementsByClassName('preview-search');
+    let div = document.getElementById('video-search-img-container');
+    while (div.hasChildNodes()) {
+        div.removeChild(div.firstChild);
+    }
+}
 
 function searchInJSon(url, value) {
     fetch(url).then(response => {
@@ -226,6 +243,8 @@ function searchInJSon(url, value) {
         }));
     }).catch(err => {});
 }
+
+
 /********************************************************
 VideoPlay
  ********************************************************/
@@ -292,7 +311,7 @@ document.onmousemove = function() {
     timeout = setTimeout(function() {
         document.getElementById('playlist-id').style.display = "none";
         document.getElementById('menu-playlist-id').style.display = "none";
-    }, 2500);
+    }, 1000);
 }
 window.addEventListener('touchstart', function() {
     document.getElementById('playlist-id').style.display = "flex";
@@ -301,5 +320,5 @@ window.addEventListener('touchstart', function() {
     timeout = setTimeout(function() {
         document.getElementById('playlist-id').style.display = "none";
         document.getElementById('menu-playlist-id').style.display = "none";
-    }, 2500);
+    }, 1000);
 });

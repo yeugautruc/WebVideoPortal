@@ -34,13 +34,14 @@
 	opacity: 0.3
 }
 
-#video-part section .navigation li:hover{
+#video-part section .navigation li:hover {
 	color: white;
 	text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
 	text-align: center;
 	font-size: 1.5em;
 	font-family: 'Lato';
 }
+
 #video-part section .navigation:hover {
 	transition: 0.5s ease;
 	opacity: 0.9
@@ -61,7 +62,7 @@
 	transition: 0.7s ease;
 	opacity: 0.9;
 	border-radius: 15px;
-	border:5px solid rgba(230, 239, 250, 0.2);
+	border: 5px solid rgba(230, 239, 250, 0.2);
 }
 
 #video-part section .navigation li img:hover {
@@ -82,17 +83,6 @@
 	left: 5px;
 	top: 5px;
 	z-index: 100;
-	pointer-events: auto
-}
-
-#video-part .menu img {
-	width: 50%;
-	opacity: 0.3
-}
-
-#video-part .menu img:hover {
-	opacity: 0.6;
-	pointer-events: all
 }
 
 #video-part .space {
@@ -119,20 +109,31 @@
 	top: 0px;
 	opacity: 0;
 	transition: opacity 0.5s ease, top 0.5s ease;
-	transition-delay: 0
+	transition-delay: 0;
+	pointer-events: none;
 }
 
 #video-part span {
-	transition: color 0.5s ease
+	transition: color 0.5s ease;
+}
+
+#video-part .menu img {
+	width: 50%;
+	opacity: 0.3;
+}
+
+#video-part .menu img:hover {
+	opacity: 0.6;
 }
 
 #video-part .item:hover span {
-	color: #6f6272
+	color: #6f6272;
 }
 
 #video-part .menu:hover .item {
 	opacity: 0.6;
-	top: 0px
+	top: 0px;
+	pointer-events: auto;
 }
 
 #video-part .item:nth-child(1) {
