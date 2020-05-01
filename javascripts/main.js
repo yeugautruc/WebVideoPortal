@@ -32,6 +32,7 @@ function hideClick() {
 window.addEventListener('click', function(e){   
   if (!document.getElementById('menu-checkbox').contains(e.target)){
       document.getElementById('menu-checkbox').checked = false;
+      document.getElementById("click-me").style.display = "block";
   }
 });
 function enterPortal(a) {
@@ -159,8 +160,7 @@ function createList(objs) {
         item.setAttribute('onmouseout','removeImgOnSearch();');
         const text = document.createTextNode(obj.name);
         item.appendChild(text);
-        listSearch.appendChild(item);;
-        console.log(item);
+        listSearch.appendChild(item);
     }
     let checkNoResult = false;
     for (let i = 0; i < listSearch.children.length; i++) {
