@@ -4,7 +4,7 @@
 	overflow: hidden;
 	font-family: 'Poppins', sans-serif;
 	background: #ffdb9b;
-	padding: 1em 4em;
+	padding: 2em 4em;
 	position: absolute;
 	border-radius: 4px;
 	min-width: 20em;
@@ -16,7 +16,7 @@
 }
 
 .alert .msg {
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
 .alert.show {

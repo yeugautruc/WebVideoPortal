@@ -29,7 +29,11 @@ function hideClick() {
         }
     }
 }
-
+window.addEventListener('click', function(e){   
+  if (!document.getElementById('menu-checkbox').contains(e.target)){
+      document.getElementById('menu-checkbox').checked = false;
+  }
+});
 function enterPortal(a) {
 
     switch (a) {
