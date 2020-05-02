@@ -223,7 +223,6 @@ function itemSearchClick(src, value) {
     searching = true;
     videoUrl(src);
     hideHome(value);
-    console.log("fuck");
 }
 function createImgOnSearch(src){
     const img = document.createElement('img');

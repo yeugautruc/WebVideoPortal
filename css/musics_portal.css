@@ -57,8 +57,8 @@
 }
 
 #video-part section .navigation li img {
-	width: 250px;
-	height: 160px;
+	width: 17vw;
+	height: auto;
 	transition: 0.7s ease;
 	opacity: 0.9;
 	border-radius: 15px;
@@ -66,8 +66,8 @@
 }
 
 #video-part section .navigation li img:hover {
-	width: 450px;
-	height: 320px;
+	width: 34vw;
+	height: auto;
 	opacity: 0.9
 }
 

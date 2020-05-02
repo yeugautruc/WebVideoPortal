@@ -20,7 +20,7 @@
 }
 
 .alert.show {
-	animation: slider 8s ease forwards;
+	animation: slider 5s ease forwards;
 	
 }
 
@@ -30,28 +30,26 @@
 
 @keyframes slider {
 	0% {
-		transform: translateX(100%);
-	}
-
-	40% {
-		transform: translateX(-20%);
+		transform: translateX(0%);
+		opacity: 0;
 	}
 
 	80% {
-		transform: translateX(20%);
+		transform: translateX(-80%);
+		opacity: 1;
 	}
 
 	95% {
-		transform: translateX(15%);
+		transform: translateX(-15%);
 	}
 
 	99% {
-		transform: translateX(5%);
+		transform: translateX(-10%);
 		opacity: 0;
 		display: none
 	}
 	100% {
-		transform: translateX(-10%);
+		transform: translateX(-5%);
 		opacity: 0;
 		display: none
 	}
