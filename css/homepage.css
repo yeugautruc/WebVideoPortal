@@ -205,7 +205,7 @@ body {
 	top: 0;
 	background: url(../images/cover.jpg);
 	background-size: 100% 100%;
-	animation: coverAnimation 25s infinite;
+	animation: coverAnimation 40s infinite;
 }
 
 @keyframes coverAnimation {
@@ -228,7 +228,9 @@ body {
 		background: url(../images/cover5.jpg);
 		background-size: 100% 100%;
 	}
-
+	100% {
+		background-size: 100% 100%;
+}
 }
 
 .footer-content {

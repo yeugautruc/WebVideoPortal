@@ -321,7 +321,7 @@ document.onmousemove = function() {
     timeout = setTimeout(function() {
         document.getElementById('playlist-id').style.display = "none";
         document.getElementById('menu-playlist-id').style.display = "none";
-    }, 1000);
+    }, 2000);
 }
 window.addEventListener('touchstart', function() {
     document.getElementById('playlist-id').style.display = "flex";
@@ -330,5 +330,5 @@ window.addEventListener('touchstart', function() {
     timeout = setTimeout(function() {
         document.getElementById('playlist-id').style.display = "none";
         document.getElementById('menu-playlist-id').style.display = "none";
-    }, 1000);
+    }, 2000);
 });

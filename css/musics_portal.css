@@ -68,7 +68,7 @@
 #video-part section .navigation li img:hover {
 	width: 34vw;
 	height: auto;
-	opacity: 0.9
+	opacity: 0.98;
 }
 
 #video-part .menu {
