@@ -344,6 +344,7 @@ ContactForm
 function showContactForm() {
     document.getElementById('undercover-form-id').style.display = 'block';
     document.getElementById('contact-form-id').style.display = 'block';
+    document.getElementById('form-input-id').reset();
 }
 window.addEventListener('click', function(e) {
     if (document.getElementById('undercover-form-id').contains(e.target)) {
