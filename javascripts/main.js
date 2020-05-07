@@ -29,12 +29,13 @@ function hideClick() {
         }
     }
 }
-window.addEventListener('click', function(e){   
-  if (!document.getElementById('menu-checkbox').contains(e.target)){
-      document.getElementById('menu-checkbox').checked = false;
-      document.getElementById("click-me").style.display = "block";
-  }
+window.addEventListener('click', function(e) {
+    if (!document.getElementById('menu-checkbox').contains(e.target)) {
+        document.getElementById('menu-checkbox').checked = false;
+        document.getElementById("click-me").style.display = "block";
+    }
 });
+
 function enterPortal(a) {
 
     switch (a) {
@@ -69,6 +70,7 @@ function alertHome(s) {
     let newSpan = document.createElement('span');
     newAlert.setAttribute('class', "alert show");
     newAlert.setAttribute('id', "alert-id");
+    0966
     newSpan.setAttribute('class', "msg");
     newSpan.setAttribute('id', "msg-id");
     newAlert.appendChild(newSpan);
@@ -155,9 +157,9 @@ function createList(objs) {
         item.classList.add('list-group-item');
         let inputFS = "itemSearchClick(\"" + obj.source + "\"," + obj.topic + ")";
         item.setAttribute('onclick', inputFS);
-        let inputMouseOver = "createImgOnSearch(\""+obj.thumbnail+"\");";
-        item.setAttribute('onmouseover',inputMouseOver);
-        item.setAttribute('onmouseout','removeImgOnSearch();');
+        let inputMouseOver = "createImgOnSearch(\"" + obj.thumbnail + "\");";
+        item.setAttribute('onmouseover', inputMouseOver);
+        item.setAttribute('onmouseout', 'removeImgOnSearch();');
         const text = document.createTextNode(obj.name);
         item.appendChild(text);
         listSearch.appendChild(item);
@@ -224,14 +226,16 @@ function itemSearchClick(src, value) {
     videoUrl(src);
     hideHome(value);
 }
-function createImgOnSearch(src){
+
+function createImgOnSearch(src) {
     const img = document.createElement('img');
     img.classList.add('preview-search');
-    img.setAttribute('src',src);
+    img.setAttribute('src', src);
     let div = document.getElementById('video-search-img-container');
     div.appendChild(img);
 }
-function removeImgOnSearch(){
+
+function removeImgOnSearch() {
     let item = document.getElementsByClassName('preview-search');
     let div = document.getElementById('video-search-img-container');
     while (div.hasChildNodes()) {
@@ -248,10 +252,12 @@ function searchInJSon(url, value) {
         }));
     }).catch(err => {});
 }
-function focusOutSearch(){
+
+function focusOutSearch() {
     document.getElementById('search-list-id').style.visibility = "hidden";
 }
-function focusSearch(){
+
+function focusSearch() {
     document.getElementById('search-list-id').style.visibility = "visible";
 }
 
@@ -332,3 +338,17 @@ window.addEventListener('touchstart', function() {
         document.getElementById('menu-playlist-id').style.display = "none";
     }, 2000);
 });
+/********************************************************
+ContactForm
+ ********************************************************/
+function showContactForm() {
+    document.getElementById('undercover-form-id').style.display = 'block';
+    document.getElementById('contact-form-id').style.display = 'block';
+}
+window.addEventListener('click', function(e) {
+    if (document.getElementById('undercover-form-id').contains(e.target)) {
+         document.getElementById('undercover-form-id').style.display = 'none';
+    document.getElementById('contact-form-id').style.display = 'none';
+    }
+});
+

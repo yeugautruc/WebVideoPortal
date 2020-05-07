@@ -83,14 +83,6 @@
 		<ul class="list-group" id="search-list-id"></ul>
 		<div id="video-search-img-container"></div>
 	</div>
-	<footer>
-		<div class="footer-container">
-			<div class="footer-content">
-				<p class="email-address">m.doan@ostfalia.de</p>
-				<p>WebProgrammierungSoSe2020</p>
-			</div>
-		</div>
-	</footer>
 </div>
 <div id="video-part" style="display: none;">
 	<div class="menu" id="menu-playlist-id">
@@ -112,4 +104,26 @@
 </div>
 <script type="text/javascript" src="javascripts/main.js"></script>
 </body>
+<footer>
+<div class="footer-container">
+<div class="footer-content">
+	<a href="#" class="contact-class" onclick="showContactForm();">Contact Us</a>
+	<p>WebProgrammierungSoSe2020</p>
+</div>
+<div class="undercover-contact-form" id="undercover-form-id"></div>
+<div class="contact-form-class" id="contact-form-id">
+	<form class="form-mail" action="mailto:m.doan@ostfalia.de" method="post" enctype="text/plain">
+		<p>Contact Us</p>
+		<p id="little_text">Hi there, send us an email when you have problems!</p>
+		<div class="name-email-contact">
+			<input type="text" name="name" placeholder="Name" required><br>
+			<input type="text" name="email" placeholder="Email" required><br>
+		</div>
+		<input type="text" name="subject" placeholder="Subject" required><br>
+		<textarea name="Message" rows="8" cols="80" placeholder="Please enter your message here"></textarea><br>
+		<input id="send_mail_button" type="submit" name="send" value="Send Email"/>
+	</form>
+</div>
+</div>
+</footer>
 </html>

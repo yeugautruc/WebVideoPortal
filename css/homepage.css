@@ -240,12 +240,49 @@ body {
 	background-color: transparent;
 	opacity: 0.7;
 	top: 89%;
+	left: 1%;
 	text-align: left;
-	margin-top: 0em;
-	margin-bottom: 0em;
-	margin-left: 0;
-	margin-right: 0;
 }
+.contact-class:hover{
+	font-size: 2.5em;
+	color: orange;
+}
+.contact-class{
+	color: white;
+	text-decoration: none;
+	font-size: 2.2em;
+}
+.undercover-contact-form{
+	position: absolute;
+	background:linear-gradient(#b92b27, #1565C0);
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+	display: none;
+}
+.contact-form-class{
+	background: black;
+	color: white;
+	padding: 1vw 1vw;
+	position: absolute;
+	top:30%;
+	left: 30%;
+	border-radius: 1vh;
+	border: 0.2vh solid white;
+	z-index: 5;
+	opacity: 1;
+	display: none;
+}
+.contact-form-class input,textarea{
+	margin-left: 0.3vw;
+	margin-bottom: 0.2vw;
+}
+.name-email-contact{
+	display: flex;
+}
+
 
 .glow:hover {
 	font-size: 4.2em;
