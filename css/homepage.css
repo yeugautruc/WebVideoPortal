@@ -262,27 +262,46 @@ body {
 	opacity: 0.5;
 	display: none;
 }
-.contact-form-class{
-	background: black;
-	color: white;
-	padding: 1vw 1vw;
-	position: absolute;
-	top:30%;
-	left: 30%;
-	border-radius: 1vh;
-	border: 0.2vh solid white;
-	z-index: 5;
-	opacity: 1;
-	display: none;
-}
-.contact-form-class input,textarea{
-	margin-left: 0.3vw;
-	margin-bottom: 0.2vw;
-}
-.name-email-contact{
-	display: flex;
+.contact-form-class p{
+	text-transform: uppercase;
+	text-align: center;
 }
 
+.contact-form-class{
+	background: rgba(130, 139, 150, 0.8);
+	color: white;
+	padding: 2vh 2vh;
+	position: absolute;
+	top:30vh;
+	left: 20vw;
+	width: 60vw;
+	height: auto;
+	border-radius: 1vh;
+	border: 0.2vw solid rgba(230, 239, 250, 0.9);;
+	z-index: 5;
+	display: none;
+	font-size: 1.2em;
+}
+.contact-form-class input,textarea{
+	margin-left: 0.1vh;
+	width: 57vw;
+	margin-bottom: 0.5vh;
+	border-radius: 0.5vw;
+	padding: 2px 15px;
+	font-size: 1em;
+}
+.contact-form-class form input::placeholder{
+	color: gray;
+	padding: 0px 5px;
+}
+.inputtext-form-class{
+	width: 57.2vw;
+}
+#send_mail_button{
+	width: 15vw;
+	padding: 5px; 
+	margin: 0px 3vw;
+}
 
 .glow:hover {
 	font-size: 4.2em;
