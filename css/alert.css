@@ -4,12 +4,12 @@
 	overflow: hidden;
 	font-family: 'Poppins', sans-serif;
 	background: #ffdb9b;
-	padding: 2em 4em;
+	padding: 1em 2em;
 	position: absolute;
 	border-radius: 4px;
-	min-width: 20em;
+	min-width: 10em;
 	right: 20px;
-	top: 65%;
+	top: 75vh;
 	border-left: 0.6em solid #ffa502;
 	border-right: 0.2em solid #ffa502;
 	opacity: 0.8;
@@ -21,7 +21,6 @@
 
 .alert.show {
 	animation: slider 5s ease forwards;
-	
 }
 
 .alert.hide {
@@ -30,28 +29,43 @@
 
 @keyframes slider {
 	0% {
-		transform: translateX(0%);
+		transform: translateX(0vw);
 		opacity: 0;
 	}
 
 	80% {
-		transform: translateX(-80%);
+		transform: translateX(-15vw);
 		opacity: 1;
 	}
 
 	95% {
-		transform: translateX(-15%);
+		transform: translateX(-10vw);
 	}
 
 	99% {
-		transform: translateX(-10%);
+		transform: translateX(-5vw);
 		opacity: 0;
 		display: none
 	}
+
 	100% {
-		transform: translateX(-5%);
+		transform: translateX(0vw);
 		opacity: 0;
 		display: none
+	}
+
+}
+
+@media only screen and (max-width:480px) {
+	.alert .msg {
+		font-size: 0.5em;
+	}
+
+}
+
+@media only screen and (max-width:780px) {
+	.alert .msg {
+		font-size: 1.5em;
 	}
 
 }
