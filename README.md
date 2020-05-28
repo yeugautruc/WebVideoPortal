@@ -9,6 +9,7 @@ Load this website into any Web-server. Run index.html to experience the website.
 ## Usage
 
 Use one of those user data to login portal:
+```javascript
 [{
     "username": "user1",
     "password": 123
@@ -19,6 +20,7 @@ Use one of those user data to login portal:
     "username": "user3",
     "password": 12345
 }]
+```
 ## History diary
 
 Feel free to visit our github project or trello record to see our program diary.
