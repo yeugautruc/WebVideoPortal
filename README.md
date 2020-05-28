@@ -34,5 +34,17 @@ If have any issues please contact us on m.doan@ostfalia.
 
 Or use contact form directly in our website.
 
-## License
+## Author
+
 m.doan@ostfalia.de
+
+Doan, Manh Hung
+
+Martikel Nr: 70465018
+## License
+
+Contents of project are used only for education purpose.
+
+Free Images from https://unsplash.com/.
+
+Video sources from youtube.
