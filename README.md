@@ -24,11 +24,14 @@ Use one of those user data to login portal:
 ## History diary
 
 Feel free to visit our github project or trello record to see our program diary.
+
 https://github.com/yeugautruc/WebVideoPortal
+
 https://trello.com/b/CYNjCcU5/web-programmierung-ss20-group1
 
 ## Contributing
 If have any issues please contact us on m.doan@ostfalia.
+
 Or use contact from directly in our website.
 
 ## License
