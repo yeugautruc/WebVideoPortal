@@ -25,9 +25,9 @@ Use one of those user data to login portal:
 
 Feel free to visit our github project or trello record to see our program diary.
 
-https://github.com/yeugautruc/WebVideoPortal
+[Github](https://github.com/yeugautruc/WebVideoPortal)
 
-https://trello.com/b/CYNjCcU5/web-programmierung-ss20-group1
+[Trello](https://trello.com/b/CYNjCcU5/web-programmierung-ss20-group1)
 
 ## Contributing
 If have any issues please contact us on m.doan@ostfalia.
@@ -45,6 +45,6 @@ Martikel Nr: 70465018
 
 Contents of project are used only for education purpose.
 
-Free Images from https://unsplash.com/.
+Free Images from [Unsplash](https://unsplash.com)
 
-Video sources from youtube.
+Video sources from [Youtube](https://youtube.com)
