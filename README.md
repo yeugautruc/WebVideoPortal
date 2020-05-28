@@ -1,6 +1,6 @@
 # VideoPortal
 
-VideoPortal is a website from our project in subject: WebProgramiering in our uni.
+VideoPortal is a website from our project in subject: WebProgrammierung in our uni.
 
 ## Installation
 
