@@ -32,7 +32,7 @@ https://trello.com/b/CYNjCcU5/web-programmierung-ss20-group1
 ## Contributing
 If have any issues please contact us on m.doan@ostfalia.
 
-Or use contact from directly in our website.
+Or use contact form directly in our website.
 
 ## License
 m.doan@ostfalia.de
