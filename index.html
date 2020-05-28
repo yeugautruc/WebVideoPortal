@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
-		<META HTTP-EQUIV="Expires" CONTENT="-1">
+
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>HomePage</title>
 		<link rel="shortcut icon" href="#">
 		<link rel="stylesheet" type="text/css" href="css/homepage.css">
@@ -16,8 +17,8 @@
 		<header class="glow" id="header">VideoPortal</header>
 		<div id="click-me">
 			<ul class="click-me">
-				<li><p id="click-me">Click</p></li>
-				<li><img id="click-me" src="images/click.svg"></li>
+				<li><p>Click</p></li>
+				<li><img alt="click-img" src="images/click.svg"></li>
 			</ul>
 		</div>
 		<div id = "menu-home-id">
@@ -28,37 +29,37 @@
 				<ul>
 					<li class="menu-item">
 						<a class="music-icon" href="#" onclick="hideHome(1);">
-							<img src="images/music.svg" >
+							<img alt="music" src="images/music.svg" >
 							<p class="img-description">Music</p>
 						</a>
 					</li>
 					<li class="menu-item">
 						<a class="sport-icon" href="#" onclick="hideHome(2);">
-							<img src="images/sport.svg">
+							<img alt="sport" src="images/sport.svg">
 							<p class="img-description">Sport</p>
 						</a>
 					</li>
 					<li class="menu-item">
 						<a class="game-icon" href="#" onclick="hideHome(3);">
-							<img src="images/gaming.svg" >
+							<img alt="gaming" src="images/gaming.svg" >
 							<p class="img-description">Game</p>
 						</a>
 					</li>
 					<li class="menu-item">
 						<a class="learn-icon" href="#" onclick="hideHome(4);">
-							<img src="images/learn.svg" >
+							<img alt="learn" src="images/learn.svg" >
 							<p class="img-description">Learn</p>
 						</a>
 					</li>
 					<li class="menu-item">
 						<a class ="funny-icon" href="#" onclick="hideHome(5);">
-							<img src="images/funny.svg">
+							<img alt="funny" src="images/funny.svg">
 							<p class="img-description">Funny</p>
 						</a>
 					</li>
 					<li class="menu-item">
 						<a class="news-icon" href="#" onclick="hideHome(6);">
-							<img src="images/news.svg" >
+							<img alt="news" src="images/news.svg" >
 							<p class="img-description">News</p>
 						</a>
 					</li>
@@ -88,13 +89,16 @@
 			<div class="footer-content">
 				<a href="#" class="contact-class" onclick="showContactForm();">Contact Us</a>
 				<p>WebProgrammierungSoSe2020</p>
+				<p>Martikel Nr: 70465018 Doan,Manh Hung m.doan@ostfalia.de</p>
+				
+
 			</div>
 			<div class="undercover-contact-form" id="undercover-form-id"></div>
 			<div class="contact-form-class" id="contact-form-id">
-				<form class="form-mail" action="mailto:m.doan@ostfalia.de?subject=Contact from your website(WebProgrammierungSoSe2020)" method="post" enctype="text/plain" id="form-input-id">
+				<form class="form-mail" action="mailto:m.doan@ostfalia.de?subject=Contact_from_your_website(WebProgrammierungSoSe2020)" method="post" enctype="text/plain" id="form-input-id">
 					<p id="little_text">Hi there, send us an email when you have problems!</p>
 					<input type="text" name="name" placeholder="Name" required><br>
-					<input type="text" name="email" placeholder="Email" required><br>
+					<input type="text" name="email" placeholder="Your Email" required><br>
 					<input type="text" name="subject" placeholder="Subject" required ><br>
 					<textarea name="Message" rows="8"  placeholder="Please enter your message" class="inputtext-form-class"></textarea><br>
 					<input id="send_mail_button" type="submit" name="send" value="Send Email"/>
@@ -105,7 +109,7 @@
 </div>
 <div id="video-part" style="display: none;">
 	<div class="menu" id="menu-playlist-id">
-		<div class="home"><img src="images/ham-menu.svg" ></div>
+		<div class="home"><img alt="menu" src="images/ham-menu.svg" ></div>
 		<div class="space"></div>
 		<div class="item"><a href="#" onclick="showHome();"><span>Home</span></a></div>
 		<div class="item"><a href="#" onclick="hideHome(1);"><span>Music</span></a></div>
