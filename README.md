@@ -46,3 +46,5 @@ Contents of project are used only for education purpose.
 Free Images from [Unsplash](https://unsplash.com)
 
 Video sources from [Youtube](https://youtube.com)
+
+Font sources from [Google Fonts](https://fonts.google.com/)
