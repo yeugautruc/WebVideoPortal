@@ -39,8 +39,6 @@ Or use contact form directly in our website.
 m.doan@ostfalia.de
 
 Doan, Manh Hung
-
-Martikel Nr: 70465018
 ## License
 
 Contents of project are used only for education purpose.
