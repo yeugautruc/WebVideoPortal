@@ -30,20 +30,21 @@ Feel free to visit our github project or trello record to see our program diary 
 [Trello](https://trello.com/b/CYNjCcU5/web-programmierung-ss20-group1)
 
 ## Contributing
+
 If have any issues please contact us on m.doan@ostfalia.
 
 Or use contact form directly in our website.
 
 ## Author
+
 Group 36
 
-Martikel Nr: 70465018
 ## License
 
 Contents of project are used only for education purpose.
 
-Font sources from [Google Fonts](https://fonts.google.com/)
-
 Free Images from [Unsplash](https://unsplash.com)
 
 Video sources from [Youtube](https://youtube.com)
+
+Font sources from [Google Fonts](https://fonts.google.com/)
