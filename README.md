@@ -27,7 +27,7 @@ Feel free to visit our github project or trello record to see our program diary 
 
 [Github](https://github.com/yeugautruc/WebVideoPortal)
 
-[Trello](https://trello.com/b/CYNjCcU5/web-programmierung-ss20-group1)
+[Trello](https://trello.com/b/CYNjCcU5/web-programmierung-ss20-group36)
 
 ## Contributing
 
