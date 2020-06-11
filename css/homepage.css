@@ -255,7 +255,7 @@ body {
 }
 .footer-content p{
 	cursor: pointer;
-	font-size: 1em;
+	font-size: 1.5em;
 }
 .contact-class{
 	color: white;
@@ -276,7 +276,31 @@ body {
 	text-transform: uppercase;
 	text-align: center;
 }
+.contact-impressum:hover{
+	font-size: 1.42em;
+	color: white;
+}
+.contact-impressum{
+	color: orange;
+	font-size: 1.4em;
+	cursor: pointer;
+}
 
+#impressum-id{
+	background: rgba(130, 139, 150, 1);
+	color: white;
+	padding: 2vh 2vh;
+	position: absolute;
+	top:30vh;
+	left: 20vw;
+	width: 60vw;
+	height: auto;
+	border-radius: 1vh;
+	border: 0.2vw solid rgba(230, 239, 250, 0.9);;
+	z-index: 5;
+	display: none;
+	font-size: 1.2em;
+}
 .contact-form-class{
 	background: rgba(130, 139, 150, 0.8);
 	color: white;

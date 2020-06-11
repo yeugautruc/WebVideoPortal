@@ -344,12 +344,18 @@ ContactForm
 function showContactForm() {
     document.getElementById('undercover-form-id').style.display = 'block';
     document.getElementById('contact-form-id').style.display = 'block';
+    document.getElementById('impressum-id').style.display = 'none';
     document.getElementById('form-input-id').reset();
+}
+function showImpressum(){
+    document.getElementById('undercover-form-id').style.display = 'block';
+    document.getElementById('impressum-id').style.display = 'block';
 }
 window.addEventListener('click', function(e) {
     if (document.getElementById('undercover-form-id').contains(e.target)) {
          document.getElementById('undercover-form-id').style.display = 'none';
     document.getElementById('contact-form-id').style.display = 'none';
+    document.getElementById('impressum-id').style.display = 'none';
     }
 });
 
