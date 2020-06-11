@@ -250,6 +250,13 @@ body {
 	font-size: 2.5em;
 	color: orange;
 }
+.footer-content p:hover{
+	color:orange;
+}
+.footer-content p{
+	cursor: pointer;
+	font-size: 1em;
+}
 .contact-class{
 	color: white;
 	text-decoration: none;
