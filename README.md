@@ -37,7 +37,7 @@ Or use contact form directly in our website.
 
 ## Author
 
-Group 36
+Doan Manh Hung
 
 ## License
 

@@ -286,8 +286,12 @@ body {
 	cursor: pointer;
 }
 
+#impressum-id p{
+	font-size: 1.4em;
+}
 #impressum-id{
-	background: rgba(130, 139, 150, 1);
+	text-align: center;
+	background: rgba(130, 139, 150, 0.91);
 	color: white;
 	padding: 2vh 2vh;
 	position: absolute;
